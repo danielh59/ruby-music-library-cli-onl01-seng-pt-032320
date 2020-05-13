@@ -58,5 +58,5 @@ def self.new_from_filename(file)
    genre = Genre.find_or_create_by_name(genre_name)
    self.new(song_name, artist, genre)
  end
- 
+
 end
