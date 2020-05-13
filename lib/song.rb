@@ -66,5 +66,5 @@ def self.new_from_filename(file)
  def save
    @@all << self
  end
- 
+
 end
