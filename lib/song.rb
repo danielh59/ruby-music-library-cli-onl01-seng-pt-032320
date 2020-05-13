@@ -50,8 +50,8 @@ end
 def self.new_from_filename(file)
    file_array= file.split(" - ")
 
-   songn = file_array[1]
    artistn = file_array[0]
+   songn = file_array[1]
    genren = file_array[2].split(".mp3").join
 
    artist = Artist.find_or_create_by_name(artisn)
