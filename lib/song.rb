@@ -47,8 +47,8 @@ def self.find_or_create_by_name(song)
   self.find_by_name(song) || self.create(song)
 end
 
-def self.new_from_filename(filename)
-   array = filename.split(" - ")
+def self.new_from_filename(file)
+   array = file.split(" - ")
 
    song_name = array[1]
    artist_name = array[0]
@@ -58,4 +58,5 @@ def self.new_from_filename(filename)
    genre = Genre.find_or_create_by_name(genre_name)
    self.new(song_name, artist, genre)
  end
+ 
 end
