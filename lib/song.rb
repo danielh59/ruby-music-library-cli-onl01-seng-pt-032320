@@ -50,13 +50,13 @@ end
 def self.new_from_filename(file)
    file_array= file.split(" - ")
 
-   song_name = file_array[1]
-   artist_name = file_array[0]
-   genre_name = file_array[2].split(".mp3").join
+   songn = file_array[1]
+   artistn = file_array[0]
+   genren = file_array[2].split(".mp3").join
 
-   artist = Artist.find_or_create_by_name(artist_name)
-   genre = Genre.find_or_create_by_name(genre_name)
-   self.new(song_name, artist, genre)
+   artist = Artist.find_or_create_by_name(artisn)
+   genre = Genre.find_or_create_by_name(genren)
+   self.new(songn, artist, genre)
  end
 
 end
